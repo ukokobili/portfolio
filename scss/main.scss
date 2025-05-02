@@ -20,7 +20,7 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 450;
 
   &.lg-heading {
     font-size: 6rem;
@@ -79,7 +79,8 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     'bioimage bio bio'
-    'job1 job2 job3';
+    'job1 job2 job3'
+    'job4 job5 job6';
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -110,12 +111,63 @@ main {
     text-align: justify;
   }
 
+  .job-4 {
+    grid-area: job4;
+    text-align: justify;
+  }
+
+  .job-5 {
+    grid-area: job5;
+    text-align: justify;
+  }
+
+  .job-6 {
+    grid-area: job6;
+    text-align: justify;
+  }
+ 
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
 }
+
+/// Services Page
+.services {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 
+    'service1 service2 service3 service4';
+  grid-template-columns: repeat(4, 1fr);
+  
+  .services-1 {
+    grid-area: service1;
+    text-align: justify;
+  }
+  
+  .services-2 {
+    grid-area: service2;  // Changed from services2 to service2
+    text-align: justify;
+  }
+  
+  .services-3 {
+    grid-area: service3;  // Changed from services3 to service3
+    text-align: justify;
+  }
+  
+  .services-4 {
+    grid-area: service4;  // Changed from services4 to service4
+    text-align: justify;
+  }
+
+  .gig {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  }
+}
+
 
 // Work/Projects
 .projects {
